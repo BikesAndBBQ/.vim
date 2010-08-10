@@ -1,0 +1,21 @@
+§
+§ =============================================================
+§ ========== USER MACROS ======================================
+§ =============================================================
+§
+|AUTHOR|    = Ryan Olson
+|AUTHORREF| = Gimpson
+|EMAIL|     = ryan.t.olson@gmail.com
+|COMPANY|   = TLO
+|COPYRIGHT| = Copyright (c) |YEAR|, |AUTHOR|
+§
+§ =============================================================
+§ ========== FILE INCLUDES ====================================
+§ =============================================================
+§
+|includefile| = comments.template
+|includefile| = statements.template
+|includefile| = idioms.template
+|includefile| = pod.template
+§
+§%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
