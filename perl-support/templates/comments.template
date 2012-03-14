@@ -32,78 +32,39 @@
 #===============================================================================
 §%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == comment.file-description-pl == start ==
-#!/usr/bin/perl 
-#===============================================================================
-#
-#         FILE:  |FILENAME|
-#
-#        USAGE:  ./|FILENAME|  
-#
-#  DESCRIPTION:  <CURSOR>
-#
-#      OPTIONS:  ---
-# REQUIREMENTS:  ---
-#         BUGS:  ---
-#        NOTES:  ---
-#       AUTHOR:  |AUTHOR| (|AUTHORREF|), |EMAIL|
-#      COMPANY:  |COMPANY|
-#      VERSION:  1.0
-#      CREATED:  |DATE| |TIME|
-#     REVISION:  ---
-#===============================================================================
+#!/usr/local/bin/perl 
 
 use strict;
 use warnings;
 
+use lib "$ENV{WEBROOT}/lib";
+use <CURSOR>;
 
+CLASSHERE->run;
 §%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == comment.file-description-pm == start ==
-#
-#===============================================================================
-#
-#         FILE:  |FILENAME|
-#
-#  DESCRIPTION:  <CURSOR>
-#
-#        FILES:  ---
-#         BUGS:  ---
-#        NOTES:  ---
-#       AUTHOR:  |AUTHOR| (|AUTHORREF|), |EMAIL|
-#      COMPANY:  |COMPANY|
-#      VERSION:  1.0
-#      CREATED:  |DATE| |TIME|
-#     REVISION:  ---
-#===============================================================================
+package <CURSOR>
+use Moose;
+use namespace::autoclean;
 
-use strict;
-use warnings;
+=head1 NAME
 
+=head1 SYNOPSIS
 
+=head1 DESCRIPTION
+
+=cut
+
+__PACKAGE__->meta->make_immutable;
 §%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == comment.file-description-t == start ==
-#
-#===============================================================================
-#
-#         FILE:  |FILENAME|
-#
-#  DESCRIPTION:  <CURSOR>
-#
-#        FILES:  ---
-#         BUGS:  ---
-#        NOTES:  ---
-#       AUTHOR:  |AUTHOR| (|AUTHORREF|), |EMAIL|
-#      COMPANY:  |COMPANY|
-#      VERSION:  1.0
-#      CREATED:  |DATE| |TIME|
-#     REVISION:  ---
-#===============================================================================
-
 use strict;
 use warnings;
+use Test::Rent;
 
-use Test::More tests => 1;                      # last test to print
+<CURSOR>
 
-
+all_done();
 §%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 == comment.file-description-pod == start ==
 #
