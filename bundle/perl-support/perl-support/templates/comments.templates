@@ -52,50 +52,31 @@ use warnings;
 use utf8;
 
 == Comments.file description pm == map:chpm, sc:d, start, noindent ==
-#
-#===============================================================================
-#
-#         FILE: |FILENAME|
-#
-#  DESCRIPTION: <CURSOR>
-#
-#        FILES: ---
-#         BUGS: ---
-#        NOTES: ---
-#       AUTHOR: |AUTHOR| (|AUTHORREF|), |EMAIL|
-# ORGANIZATION: |ORGANIZATION|
-#      VERSION: 1.0
-#      CREATED: |DATE| |TIME|
-#     REVISION: ---
-#===============================================================================
+package <CURSOR>
 
-use strict;
-use warnings;
- 
+=head1 NAME
+
+  ...
+
+=head2 SYNOPSIS
+
+  ...
+
+=cut
+
+use StarterView::Moose;
+use namespace::autoclean;
+
+1;
 == Comments.file description t == map:cht, sc:d, start, noindent ==
-#
-#===============================================================================
-#
-#         FILE: |FILENAME|
-#
-#  DESCRIPTION: <CURSOR>
-#
-#        FILES: ---
-#         BUGS: ---
-#        NOTES: ---
-#       AUTHOR: |AUTHOR| (|AUTHORREF|), |EMAIL|
-# ORGANIZATION: |ORGANIZATION|
-#      VERSION: 1.0
-#      CREATED: |DATE| |TIME|
-#     REVISION: ---
-#===============================================================================
-
 use strict;
 use warnings;
 
-use Test::More tests => 1;                      # last test to print
+use Test::Most;
 
+<CURSOR>
 
+done_testing();
 == Comments.file description pod == map:chpo, sc:d, start ==
 #
 #===============================================================================
